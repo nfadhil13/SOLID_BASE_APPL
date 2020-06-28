@@ -9,7 +9,7 @@ public class StreamProgressInfo {
         this.file = file;
     }
 
-    public int CalculateCurrentPercent(){
-        return file.getByteSent() / file.getLength() *100;
+    public double CalculateCurrentPercent(){
+        return (double)file.getByteSent() / (double)file.getLength() *100;
     }
 }
